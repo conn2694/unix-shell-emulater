@@ -1,2 +1,3 @@
 # unix-shell-emulater
-Shell emulator made in C. Allows for multiple processes.
+Shell emulator made in C. 
+The program parses valid shell commands as input and converts it into a real shell command. The pipes and redirectsare handled through child processes that recursively execute segments of the command, the parent process simultaneously executes code along with the child processes to make sure they finish their execution at the right time to produce a consistent parallel program. The child processes speed up the program execution, but also allows for a more readable program that would normally require embedded for loops. 
